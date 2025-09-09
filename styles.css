@@ -1,27 +1,74 @@
+/* Fuente más moderna */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff8f0;
+  background: #fffdf7;
   text-align: center;
+  color: #333;
 }
 
+/* Encabezado con gradiente tipo "pizzería" */
 header {
-  background: #ff4d4d;
+  background: linear-gradient(135deg, #ff3d3d, #ff9e2c);
   color: white;
-  padding: 50px 20px;
+  padding: 60px 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #fffbe6;
+}
+
+/* Botón estilo moderno */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 15px 25px;
-  background: #fff;
-  color: #ff4d4d;
+  margin-top: 25px;
+  padding: 15px 35px;
+  background: #2ecc71; /* verde fresco */
+  color: white;
   text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
+
 .btn:hover {
-  background: #ffe6e6;
+  background: #27ae60;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Sección principal */
+main {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+main h2 {
+  color: #e63946;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer con fondo oscuro elegante */
+footer {
+  background: #333;
+  color: #eee;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }
