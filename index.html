@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tanito Pizza</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Fuente moderna de Google -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- Encabezado principal -->
   <header>
-    <h1>🍕 Tanito Pizza</h1>
-    <p>La mejor pizza de barrio, directo a tu mesa</p>
+    <img src="imagenes/logo.jpg" alt="Logo Tanito Pizza" class="logo">
+    <h1>🍕Tanito Pizza🍕</h1>
+
+    <!-- Botón WhatsApp -->
     <a href="https://wa.me/59898786690" target="_blank" class="btn">Pedir por WhatsApp</a>
+
+    <!-- Botón Instagram con icono -->
+    <a href="https://www.instagram.com/tanitopizzas/" target="_blank" class="btn btn-ig">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24"
+        style="vertical-align: middle; margin-right: 8px;">
+        <path
+          d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.96.246 2.42.41.59.215 1.01.475 1.45.91.435.44.695.86.91 1.45.164.46.354 1.25.41 2.42.058 1.27.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.246 1.96-.41 2.42-.215.59-.475 1.01-.91 1.45-.44.435-.86.695-1.45.91-.46.164-1.25.354-2.42.41-1.27.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.96-.246-2.42-.41-.59-.215-1.01-.475-1.45-.91-.435-.44-.695-.86-.91-1.45-.164-.46-.354-1.25-.41-2.42C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.056-1.17.246-1.96.41-2.42.215-.59.475-1.01.91-1.45.44-.435.86-.695 1.45-.91.46-.164 1.25-.354 2.42-.41C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.736 0 8.332.012 7.052.07 5.77.127 4.71.317 3.87.63c-.85.31-1.57.725-2.29 1.447-.723.722-1.137 1.44-1.447 2.29-.313.84-.503 1.9-.56 3.182C-.012 8.332 0 8.736 0 12s-.012 3.668.07 4.948c.057 1.282.247 2.342.56 3.182.31.85.724 1.57 1.447 2.29.722.723 1.44 1.137 2.29 1.447.84.313 1.9.503 3.182.56C8.332 23.988 8.736 24 12 24s3.668-.012 4.948-.07c1.282-.057 2.342-.247 3.182-.56.85-.31 1.57-.724 2.29-1.447.723-.722 1.137-1.44 1.447-2.29.313-.84.503-1.9.56-3.182.058-1.28.07-1.684.07-4.948s-.012-3.668-.07-4.948c-.057-1.282-.247-2.342-.56-3.182-.31-.85-.724-1.57-1.447-2.29-.722-.723-1.44-1.137-2.29-1.447-.84-.313-1.9-.503-3.182-.56C15.668.012 15.264 0 12 0z" />
+        <path
+          d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.998 3.998 0 1 1 0-7.996 3.998 3.998 0 0 1 0 7.996zM18.406 4.594a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z" />
+      </svg>
+      Seguinos en Instagram
+    </a>
   </header>
 
-  <!-- Sección del menú -->
-  <main>
-    <section>
-      <h2>Menú destacado</h2>
-      <div class="menu">
-        <p>🍕 Muzza clásica</p>
-        <p>🍕 Napolitana</p>
-        <p>🍕 4 Quesos</p>
-      </div>
-    </section>
-  </main>
+  <!-- Sección About -->
+  <section class="about">
+    <h2>Pizzas & Pasta artesanal</h2>
+    <p class="subtitle">Producto / Servicio</p>
+    <ul>
+      <li>🍕 Servicio de venta de Prepizzas y Fainá</li>
+      <li>🍝 Elaboración de Pastas frescas</li>
+      <li>🎉 Comida para fiestas, eventos y más…</li>
+    </ul>
+    <p class="highlight">✨ Calidad y buen sabor, hecho con mucho amor 🗣️</p>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <p>📍 Bella Italia (Juana de América), Montevideo, Uruguay</p>
-    <p>📞 098 786 690</p>
-  </footer>
+<footer>
+  <p>📍 Bella Italia (Juana de América), Montevideo, Uruguay</p>
+  <p>📞 098 786 690</p>
+  <p>2025 todos los derechos reservados. <a href="https://www.tesoportecnico.uy" target="_blank" style="color: #eee; text-decoration: underline;">TE soportecnico</a>.</p>
+</footer>
+
+  <!-- Script fondo animado -->
+  <script>
+    const images = [
+      'imagenes/pasta.png',
+      'imagenes/pizza1.png',
+      'imagenes/tallarines.png',
+      'imagenes/tartas.png'
+    ];
+    let i = 0;
+    function changeBackground() {
+      document.body.style.backgroundImage = `url(${images[i]})`;
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundPosition = 'center';
+      i = (i + 1) % images.length;
+    }
+    setInterval(changeBackground, 5000);
+    changeBackground();
+  </script>
 </body>
+
 </html>
 
