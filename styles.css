@@ -35,6 +35,10 @@ header h1 {
 }
 
 /* Botones */
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600;color:#fff;background:#25D366;}
+.btn:hover{filter:brightness(.92)}
+
 .btn {
   display: inline-block;
   margin-top: 10px;
