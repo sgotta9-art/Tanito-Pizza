@@ -1,4 +1,4 @@
-/* Fuente más moderna */
+/* Fuente moderna */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
@@ -6,69 +6,140 @@ body {
   background: #fffdf7;
   text-align: center;
   color: #333;
+  overflow-x: hidden;
 }
 
-/* Encabezado con gradiente tipo "pizzería" */
+/* Encabezado compacto */
 header {
   background: linear-gradient(135deg, #ff3d3d, #ff9e2c);
   color: white;
-  padding: 60px 20px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   margin: 0;
   font-weight: 700;
 }
 
-header p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #fffbe6;
-}
-
-/* Botón estilo moderno */
+/* Botones */
 .btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 15px 35px;
-  background: #2ecc71; /* verde fresco */
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #2ecc71;
   color: white;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: #27ae60;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Sección principal */
-main {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
+/* Botón Instagram */
+.btn-ig {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #E1306C;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-main h2 {
+.btn-ig:hover {
+  background: #C13584;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn-ig svg {
+  margin-right: 8px;
+}
+
+/* About */
+.about {
+  background: #fff;
+  color: #333;
+  padding: 20px 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 1.5rem;
   color: #e63946;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-/* Footer con fondo oscuro elegante */
+.about .subtitle {
+  font-size: 1rem;
+  color: #ff914d;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+}
+
+.about ul li {
+  margin: 7px 0;
+}
+
+.about .highlight {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2a9d8f;
+  margin-top: 15px;
+}
+
+/* Footer compacto */
 footer {
   background: #333;
   color: #eee;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 0.9rem;
+  padding: 15px;
+  font-size: 0.85rem;
+}
+
+/* Capa semitransparente sobre el fondo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 253, 247, 0.7);
+  z-index: -1;
 }
